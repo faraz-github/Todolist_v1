@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
+/* Project Wide */
+
+body{
+    background-color: #FEF1E6;
+}
+
+footer{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+    color: #90AACB;
+    text-shadow: #FFB085 0px 0 10px;
+}
+
+/* Home, Register, Login Wide */
+
+.credential-button{
+    background-color: #90AACB;
+    color: #FEF1E6;
+    border: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+}
+.credential-button:hover{
+    box-shadow: #FFB085 0px 0 10px;
+}
+
+/* HOME */
+
+.title{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 10rem;
+    color: #90AACB;
+    text-shadow: #FFB085 0px 0 10px;
+}
+
+.login-link{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.register-link{
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Register, Login Wide */
+
+.credential-box{
+    width: max-content;
+    padding: 1rem;
+    background-color: #F9D5A7;
+    border-radius: 1rem;
+    box-shadow: #90AACB 0px 0 10px;
+}
+
+.credential-title{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #90AACB  ;
+    text-shadow: #FFB085 0px 0 10px;
+}
+
+label{
+    color: #90AACB;
+}
+
+
+/* LIST */
+
+.list-title{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 5rem;
+    color: #90AACB;
+    text-shadow: #FFB085 0px 0 10px;
+}
+
+.logout-button{
+    background-color: #90AACB;
+    color: #FEF1E6;
+    border: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logout-button:hover{
+    box-shadow: #FFB085 0px 0 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 0.5rem;
+}
+.inputCheckbox{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-color: #FFB085;
+}
+
+.inputCheckbox:checked{
+    background-color: #FFB085;
+    border-color: #FFB085;
+}
+.inputCheckbox:focus{
+    box-shadow: #FFB085 0px 0px 5px;
+    border-color: #FFB085;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: #FFB085;
+}
+
+.list-item{
+    display: inline;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #90AACB;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    text-shadow: #FFB085 0px 0 10px;
+}
+
+.delete-button{
+    padding: 0;
+    color: #FFB085;
+    font-size: 1.5rem;
+}
+
+.inputItem{
+    margin: 0.5rem 0;
+    border-color: #90AACB;
+}
+
+.inputItem:focus{
+    box-shadow: #FFB085 0px 0px 5px;
+    border-color: #FFB085;
+}
+
+.plus-button{
+    font-size: 2rem;
+    padding: 0;
+    color: #FFB085;
+}
+
+
+
+

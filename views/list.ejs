@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>TodoList</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-5">
+
+            <div class="col-6">
+                <h1 class="list-title"> ToDoList </h1>
+            </div>
+
+            <div class="col-6">
+                <a class="float-end mt-4" href="/logout"> <button class="btn logout-button">Logout<i class="bi bi-door-closed"></i></button> </a>
+            </div>
+
+        </div>
+
+        <div class="row  mt-5">
+
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1 col-1">
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 col-10">
+
+                <ul>
+
+                    <% displayItems.forEach(function(item, index){ %>
+                        <form action="/delete" method="post">
+                            <li>
+                                <input class="form-check-input inputCheckbox" type="checkbox" name="" id="">
+                                <p class="list-item align-bottom"><%= item %></p>
+                                <button class="btn delete-button float-end" name="deleteThis" value="<%= item %>" type="submit"><i class="bi bi-trash"></i></button>
+                            </li>
+
+                        </form>
+                    <% }) %>
+
+                            <form action="/todolist" method="post">
+                                <li>
+                                    <input class="form-control inputItem" type="text" name="newItem" placeholder="Write here..." required>
+                                    <button class="btn plus-button float-end" type="submit"><i class="bi bi-plus-circle"></i></button>
+                                </li>
+                            </form>
+
+                </ul>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1 col-1">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="mt-5 text-center">
+        copyright &#169; Faraz
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
